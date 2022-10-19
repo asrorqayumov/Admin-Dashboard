@@ -7,9 +7,6 @@ import { Featured } from "./../../components/featured/Featured";
 import { Chart } from "./../../components/chart/Chart";
 import { List } from "./../../components/table/Table";
 
-
-
-
 export const Home = () => {
   return (
     <div className="home">
@@ -24,13 +21,11 @@ export const Home = () => {
         </div>
         <div className="charts">
           <Featured />
-          <Chart />
+          <Chart title="Last 6 Months (Revenue)" aspect={2 / 1} />
         </div>
         <div className="listContainer">
-           <div className="listTitle">
-             Latest Transictions
-           </div>
-           <List />
+          <div className="listTitle">Latest Transictions</div>
+          <List />
         </div>
       </div>
     </div>
